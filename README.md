@@ -62,7 +62,6 @@ By completing this project, you will be able to:
 
 ## 🧰 Technical Requirements
 
-- Must use **HTML**, **JavaScript**, and **Bootstrap 5**.
 - Only the required array methods may be used.
 - No advanced methods such as `map`, `filter`, or `reduce`.
 - Code must run in the browser without errors.
