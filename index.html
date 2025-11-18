@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Array Manipulation Review</title>
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+        crossorigin="anonymous"
+    >
+    <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+
+    <div class="container my-4">
+        <!-- Page Header -->
+        <div class="text-center mb-4">
+            <h1 class="fw-bold">REVIEW: Manipulating Arrays</h1>
+            <p class="lead">
+                Review using <strong>creation</strong>, 
+                <strong>push, pop, shift, unshift, length, sort</strong> and <strong>reverse</strong>.
+            </p>
+        </div>
+
+        <div class="mb-3">
+            <h2 class="h4 text-center text-uppercase">Instructions</h2>
+        </div>
+
+        <!-- Step 1 -->
+        <div class="card mb-3 shadow-sm">
+            <div class="card-body">
+                <h3 class="h5 card-title">1. Create an array</h3>
+                <p class="card-text mb-1">
+                    Create an array that has:
+                    <strong>Instagram, Facebook, WhatsApp, Chrome, Youtube, Camera</strong>
+                </p>
+                <p class="card-text">
+                    Example:
+                    <code>var apps = ["Instagram", "Facebook", "WhatsApp", "Chrome", "Youtube", "Camera"];</code>
+                </p>
+                <div class="output-box" id="step1-output">
+                    Step 1 Output:
+                </div>
+            </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="card mb-3 shadow-sm">
+            <div class="card-body">
+                <h3 class="h5 card-title">2. Add 3 apps using <code>push()</code></h3>
+                <p class="card-text">
+                    Use:
+                    <code>apps.push("value1", "value2", "value3");</code>
+                </p>
+                <div class="output-box" id="step2-output">
+                    Step 2 Output:
+                </div>
+            </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="card mb-3 shadow-sm">
+            <div class="card-body">
+                <h3 class="h5 card-title">3. Add 3 apps to the beginning using <code>unshift()</code></h3>
+                <p class="card-text">
+                    Use:
+                    <code>apps.unshift("value1", "value2", "value3");</code>
+                </p>
+                <div class="output-box" id="step3-output">
+                    Step 3 Output:
+                </div>
+            </div>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="card mb-3 shadow-sm">
+            <div class="card-body">
+                <h3 class="h5 card-title">4. Remove 2 items from the end using <code>pop()</code></h3>
+                <p class="card-text">
+                    Remove 2 items from the end of the array and print:
+                    <br>
+                    <code>"The last item removed was &lt;item&gt;"</code>
+                </p>
+                <div class="output-box" id="step4-output">
+                    Step 4 Output:
+                </div>
+            </div>
+        </div>
+
+        <!-- Step 5 -->
+        <div class="card mb-3 shadow-sm">
+            <div class="card-body">
+                <h3 class="h5 card-title">5. Remove 2 items from the beginning using <code>shift()</code></h3>
+                <p class="card-text">
+                    Remove 2 items from the beginning of the array and print:
+                    <br>
+                    <code>"The first item removed was &lt;item&gt;"</code>
+                </p>
+                <div class="output-box" id="step5-output">
+                    Step 5 Output:
+                </div>
+            </div>
+        </div>
+
+        <!-- Step 6 -->
+        <div class="card mb-3 shadow-sm">
+            <div class="card-body">
+                <h3 class="h5 card-title">6. Sort the array</h3>
+                <p class="card-text">
+                    Use:
+                    <code>apps.sort();</code>
+                </p>
+                <div class="output-box" id="step6-output">
+                    Step 6 Output:
+                </div>
+            </div>
+        </div>
+
+        <!-- Step 7 -->
+        <div class="card mb-3 shadow-sm">
+            <div class="card-body">
+                <h3 class="h5 card-title">7. Reverse the array</h3>
+                <p class="card-text">
+                    Use:
+                    <code>apps.reverse();</code>
+                </p>
+                <div class="output-box" id="step7-output">
+                    Step 7 Output:
+                </div>
+            </div>
+        </div>
+
+        <!-- Step 8 -->
+        <div class="card mb-3 shadow-sm">
+            <div class="card-body">
+                <h3 class="h5 card-title">8. Display how many items are in the array</h3>
+                <p class="card-text">
+                    Use:
+                    <code>apps.length;</code>
+                </p>
+                <div class="output-box" id="step8-output">
+                    Step 8 Output:
+                </div>
+            </div>
+        </div>
+
+        <!-- Challenge -->
+        <div class="mt-4 mb-2">
+            <h2 class="h4 text-center text-uppercase text-danger">Challenge</h2>
+        </div>
+
+        <!-- Step 9 -->
+        <div class="card mb-4 shadow-sm">
+            <div class="card-body">
+                <h3 class="h5 card-title">9. Display a random value from the array</h3>
+                <p class="card-text">
+                    Use:
+                    <code>Math.random()</code> with the array length to pick a random index.
+                </p>
+                <div class="output-box" id="step9-output">
+                    Challenge Output:
+                </div>
+            </div>
+        </div>
+
+        
+				<div class="card mb-4 shadow-sm">
+            <div class="card-body">
+							<h3 class="h5 card-title">10. Display the icons of each social network icon in the array.<small>Create a new array with the links.</small></h3>
+            Use: <code>backticks: ``, template literal: ${ }, .append() or .insertAdjacentHTML( )</code>
+                <div class="output-box" id="step9-output">
+                    Challenge Output:
+                </div>
+            </div>
+        </div>
+			
+				<div class="card mb-4 shadow-sm">
+            <div class="card-body">
+                <h3 class="h5 card-title">
+									11. Display the icons and underneath display the name of the social network. Use only the previousouly created arrays.</h3>
+                <p class="card-text">
+                    Use:
+                    <code>backticks: ``, template literal: ${ }, .append() or .insertAdjacentHTML( )</code>
+                </p>
+                <div class="output-box" id="step9-output">
+                    Challenge Output:
+                </div>
+            </div>
+        </div>
+			
+			
+    </div>
+
+
+	
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+    
+</body>
+</html>
